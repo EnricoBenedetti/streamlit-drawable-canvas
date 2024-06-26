@@ -21,7 +21,7 @@ function getStreamlitBaseUrl(): string | null {
   }
 
   try {
-    return new URL(baseUrl).origin
+    return new URL(baseUrl).href
   } catch {
     return null
   }
